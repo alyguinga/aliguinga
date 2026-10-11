@@ -1,219 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta name="theme-color" content="#1e40af">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <title>ALY GUINGA</title>
-    <link rel="stylesheet" href="css/style.css?v=2.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script defer src="js/script.js"></script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ali Guinga — Data Science & AI Portfolio</title>
+<meta name="description" content="Ali Guinga — Computer Engineer and ENSA Tétouan graduate specialising in Data Science, Big Data and AI. Projects in LLMs, RAG, computer vision and analytics." />
+<link rel="icon" href="assets/profile.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css?v=pfe1" />
 </head>
 <body>
-    <!-- Scroll Progress Indicator -->
-    <div class="scroll-indicator">
-        <div class="scroll-progress" id="scrollProgress"></div>
+<a class="skip-link" href="#top">Skip to content</a>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#top" aria-label="Ali Guinga, back to top"><span>AG</span>ali guinga</a>
+  <nav id="primary-nav" aria-label="Main navigation">
+    <a href="#work">projects</a>
+    <a href="#skills">skills</a>
+    <a href="#journey">journey</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="nav-controls">
+    <button id="theme" type="button" aria-label="Switch to light theme">◑</button>
+    <button id="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Open navigation" hidden><span aria-hidden="true">☰</span></button>
+  </div>
+</header>
+
+<main id="top" tabindex="-1">
+  <section class="hero">
+    <p class="kicker" data-reveal>Data Science · Big Data · AI — ENSA Tétouan</p>
+    <h1 class="title">
+      <span class="line grad" data-reveal>Ali</span>
+      <span class="line outline" data-reveal>Guinga</span>
+      <span class="line small" data-reveal>working with <span class="typed" id="typed">Data Science</span><span class="caret" aria-hidden="true">|</span></span>
+    </h1>
+    <p class="lede" data-reveal>Computer engineer building things with machine learning, LLMs and computer vision — from RAG chatbots to real-time plate detection.</p>
+    <div class="hero-actions" data-reveal>
+      <a class="btn" href="#work">See the projects</a>
+      <a class="btn ghost" href="assets/CV_Ali_Guinga.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+    </div>
+    <div class="badge" data-reveal>
+      <span class="dot"></span>
+      Open to projects &amp; collaboration · Data Science &amp; AI
+    </div>
+    <img class="hero-photo" src="assets/profile.jpeg" alt="Portrait of Ali Guinga" data-reveal />
+    <div class="scroll-hint" aria-hidden="true">scroll ↓</div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>machine learning ✦ LLMs &amp; RAG ✦ computer vision ✦ data pipelines ✦ Power BI ✦ vector search ✦ NLP ✦</span>
+      <span>machine learning ✦ LLMs &amp; RAG ✦ computer vision ✦ data pipelines ✦ Power BI ✦ vector search ✦ NLP ✦</span>
+    </div>
+  </div>
+
+  <section id="work" class="section">
+    <h2 class="section-title" data-reveal><em>01</em> Selected projects</h2>
+    <div class="grid">
+      <article class="card featured" data-reveal>
+        <div class="thumb thumb-neurofusion"><img src="assets/projects/neurofusion-ad.png" alt="NeuroFusion-AD dashboard showing EEG upload, model selection and classification results" loading="lazy" /><span class="pill">PFE · Acti-Sens Lab · 2026</span></div>
+        <div class="card-body">
+          <h3>NeuroFusion-AD — Alzheimer's Detection from EEG</h3>
+          <p>Research pipeline combining raw EEG, wavelet scalograms and 552 engineered biomarkers with attention-based deep learning. Built at Acti-Sens Lab, with subject-wise evaluation and a Gradio dashboard for model comparison and explainability.</p>
+          <ul class="tags"><li>PyTorch</li><li>MNE-Python</li><li>EEG</li><li>Explainable AI</li><li>Gradio</li><li>Hugging Face</li></ul>
+          <div class="links"><a href="https://huggingface.co/spaces/AliGuinga/neurofusion-ad-clinic" target="_blank" rel="noopener">Hugging Face ↗</a></div>
+        </div>
+      </article>
+      <article class="card featured" data-reveal>
+        <div class="thumb"><img src="assets/projects/chatbot.svg?v=2" alt="Chatbot conversation mock-up" /><span class="pill">Professional · ADD Rabat · 2025</span></div>
+        <div class="card-body">
+          <h3>AI Chatbot — PFA Internship</h3>
+          <p>End-to-end intelligent chatbot for the Digital Development Agency: conceptual study, architecture, and full implementation on top of modern LLMs with retrieval-augmented generation.</p>
+          <ul class="tags"><li>LLMs</li><li>RAG</li><li>HuggingFace</li><li>Qdrant</li><li>Python</li></ul>
+          <div class="links"><a href="https://docs.google.com/document/d/1w6zgl5zwLXZFI_3j7LI1vEBQ5VOY3cac/edit?usp=sharing" target="_blank" rel="noopener">Report ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="thumb"><img src="assets/projects/plates.jpg" alt="Detected car, Lexus logo and Moroccan plate with bounding boxes" loading="lazy" /><span class="pill">Deep learning · Team</span></div>
+        <div class="card-body">
+          <h3>Vehicle Logo &amp; License Plate Detection</h3>
+          <p>Real-time recognition of vehicle logos and Moroccan license plates with YOLOv8 and OpenCV.</p>
+          <ul class="tags"><li>YOLOv8</li><li>OpenCV</li><li>Streamlit</li></ul>
+          <div class="links"><a href="https://github.com/TeamXGroup/cars-logos-plates-detection" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="thumb"><img src="assets/projects/laptop-search.svg" alt="Semantic search over a vector space" loading="lazy" /><span class="pill">Hackathon · Qdrant 2025</span></div>
+        <div class="card-body">
+          <h3>Laptop Semantic Search Engine</h3>
+          <p>Product specs turned into embeddings and searched with Qdrant — built for the "Think Outside the Bot" hackathon.</p>
+          <ul class="tags"><li>Qdrant</li><li>Sentence Transformers</li><li>Jina</li></ul>
+          <div class="links"><a href="https://github.com/alyguinga/Laptop-Search-Engine-Powered-by-Qdrant" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="thumb"><img src="assets/projects/olympics.jpg" alt="Paris 2024 Streamlit dashboard with medal charts" loading="lazy" /><span class="pill">Web app · Live</span></div>
+        <div class="card-body">
+          <h3>Olympic Games Paris 2024</h3>
+          <p>Interactive Streamlit app exploring the history and data of the Olympics with rich visualisations.</p>
+          <ul class="tags"><li>Streamlit</li><li>Pandas</li><li>Data viz</li><li>Web scraping</li></ul>
+          <div class="links"><a href="https://olympic-games-paris-2024.streamlit.app/" target="_blank" rel="noopener">Live ↗</a><a href="https://github.com/alyguinga/Olympic-Games-Paris-2024" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="thumb"><img src="assets/projects/transfers.svg" alt="ETL pipeline: scraper, Airflow, MongoDB, BI" loading="lazy" /><span class="pill">Data pipeline · Team</span></div>
+        <div class="card-body">
+          <h3>Transfer Rumours &amp; Player Performance</h3>
+          <p>ETL pipeline scraping football transfer rumours into MongoDB Atlas via Airflow and Docker, modelled in Power BI.</p>
+          <ul class="tags"><li>Airflow</li><li>Docker</li><li>MongoDB</li><li>Power BI</li><li>API integration</li></ul>
+          <div class="links"><a href="https://github.com/alyguinga/Transfer-Rumours-Analysis" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="thumb thumb-logo"><img class="logo-img" src="assets/projects/chicillo.jpg" alt="Chic-illo logo" loading="lazy" /><span class="pill">NLP / AI · Team</span></div>
+        <div class="card-body">
+          <h3>Chic-illo AI Assistant</h3>
+          <p>LLM assistant for DIY and recycling — turning recyclable materials into creative project ideas.</p>
+          <ul class="tags"><li>LLMs</li><li>Hugging Face</li><li>Streamlit</li><li>Hackathon</li></ul>
+          <div class="links"><a href="https://github.com/TeamXGroup/MoroccoAI-Hackathon" target="_blank" rel="noopener">GitHub ↗</a></div>
+        </div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="thumb"><img src="assets/projects/bikeshare.svg" alt="Bar chart of casual vs member riders" loading="lazy" /><span class="pill">Business intelligence</span></div>
+        <div class="card-body">
+          <h3>Bike-share Analysis</h3>
+          <p>How to convert casual riders into annual subscribers — an analysis and BI story built in Power BI.</p>
+          <ul class="tags"><li>Power BI</li><li>Data analysis</li><li>Airflow</li><li>Docker</li><li>SQL</li><li>PostgreSQL</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2 class="section-title" data-reveal><em>02</em> About</h2>
+    <div class="about-grid two">
+      <div>
+        <p class="big" data-reveal>I'm a computer engineer and ENSA Tétouan graduate, specialising in Data Science, Big Data and Artificial Intelligence.</p>
+        <p class="lede" data-reveal>Passionate about cutting-edge technologies, I focus on machine learning, deep learning, computer vision and large language models — and on where they can genuinely change an industry. Beyond my technical work, I'm active in Club AIGEEKS and volunteer as an Arabic teacher for children at Association Al-Amal.</p>
+        <div class="stats" data-reveal>
+          <div><strong>8+</strong><span>projects shipped</span></div>
+          <div><strong>7</strong><span>certificates</span></div>
+          <div><strong>100%</strong><span>open source</span></div>
+        </div>
+      </div>
+      <figure class="about-photo" data-reveal>
+        <img src="assets/about.jpg" alt="Ali Guinga" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title" data-reveal><em>03</em> Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group" data-reveal><h4>Languages</h4><ul class="skills"><li>Python</li><li>SQL</li><li>R</li><li>JavaScript</li><li>HTML/CSS</li><li>Java</li></ul></div>
+      <div class="skill-group" data-reveal><h4>ML &amp; AI</h4><ul class="skills"><li>Scikit-learn</li><li>PyTorch</li><li>TensorFlow</li><li>Hugging Face</li><li>OpenCV</li><li>YOLO</li><li>NLP</li><li>Sentence Transformers</li></ul></div>
+      <div class="skill-group" data-reveal><h4>Data</h4><ul class="skills"><li>Pandas</li><li>NumPy</li><li>Power BI</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>Statistics</li></ul></div>
+      <div class="skill-group" data-reveal><h4>Databases</h4><ul class="skills"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Qdrant</li><li>SQLite</li></ul></div>
+      <div class="skill-group" data-reveal><h4>Tools &amp; platforms</h4><ul class="skills"><li>Docker</li><li>Apache Airflow</li><li>Git</li><li>Streamlit</li><li>FastAPI</li><li>Flask</li><li>Kaggle</li><li>AWS</li><li>Azure</li></ul></div>
+      <div class="skill-group" data-reveal><h4>Scraping &amp; APIs</h4><ul class="skills"><li>BeautifulSoup</li><li>Selenium</li><li>Scrapy</li><li>Requests</li></ul></div>
+    </div>
+  </section>
+
+  <section id="journey" class="section">
+    <h2 class="section-title" data-reveal><em>04</em> Journey</h2>
+    <div class="timeline">
+      <div class="tl-item" data-reveal><span class="tl-date">2023 — 2026</span><h4>State Engineering Diploma — Computer Engineering</h4><p>ENSA Tétouan · Data Science, Big Data &amp; AI</p></div>
+      <div class="tl-item" data-reveal><span class="tl-date">2026</span><h4>PFE — NeuroFusion-AD</h4><p>Acti-Sens Lab · EEG biomarkers, deep learning &amp; explainable AI for Alzheimer's detection</p></div>
+      <div class="tl-item" data-reveal><span class="tl-date">Jul – Aug 2025</span><h4>PFA Internship — AI Chatbot</h4><p>ADD (Digital Development Agency), Rabat</p></div>
+      <div class="tl-item" data-reveal><span class="tl-date">2024 — 2025</span><h4>Volunteer Arabic teacher</h4><p>Association Al-Amal, Tétouan · Member, Club AIGEEKS</p></div>
+      <div class="tl-item" data-reveal><span class="tl-date">2021 — 2023</span><h4>Preparatory cycle</h4><p>ENSA Tétouan · Mathematics, physics &amp; engineering fundamentals</p></div>
+      <div class="tl-item" data-reveal><span class="tl-date">2020 — 2021</span><h4>Civil Engineering</h4><p>EST Salé</p></div>
+      <div class="tl-item" data-reveal><span class="tl-date">2017 — 2020</span><h4>Baccalauréat, Mathematical Sciences — with honours</h4><p>Ibn Al-Atir High School, Tétouan</p></div>
     </div>
 
-    <!-- YouTube Support Banner -->
-    <div id="youtube-banner" class="youtube-banner" >
-        <a href="https://youtube.com/@aliguinga660?si=Szc6zRNXIr3y-0op" target="_blank">
-            <i class="fab fa-youtube"></i>
-            Support us on YouTube - Subscribe for more content!
-        </a>
-        <button class="close-banner" onclick="closeBanner()">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
+    <h3 class="sub-title" data-reveal>Certificates</h3>
+    <ul class="certs" data-reveal>
+      <li><span>Fundamentals of Agents</span><small>HuggingFace · 2025</small></li>
+      <li><span>Understanding Cloud Computing</span><small>DataCamp · 2025</small></li>
+      <li><a href="https://www.kaggle.com/learn/certification/aliguinga5/pandas" target="_blank" rel="noopener">Pandas ↗</a><small>Kaggle Learn · 2025</small></li>
+      <li><a href="https://www.kaggle.com/learn/certification/aliguinga5/intro-to-machine-learning" target="_blank" rel="noopener">Intro to Machine Learning ↗</a><small>Kaggle Learn · 2025</small></li>
+      <li><a href="https://try.qdrant.tech/hackathon-2025" target="_blank" rel="noopener">"Think Outside the Bot" Hackathon ↗</a><small>Qdrant · 2025</small></li>
+      <li><a href="https://rise-miccai.org/" target="_blank" rel="noopener">RISE-MICCAI participation ↗</a><small>2024</small></li>
+      <li><span>National Hackathon participation</span><small>ENSA Tanger · 2022</small></li>
+    </ul>
+  </section>
 
-    <!-- PFA Internship Pop-up -->
-    <div id="pfa-popup" class="pfa-popup">
-        <div class="pfa-popup-content">
-            <div class="pfa-popup-header">
-                <div class="pfa-popup-icon">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <span class="pfa-popup-close">&times;</span>
-            </div>
-            <div class="pfa-popup-body">
-                <h3>🎓 Seeking PFE Internship</h3>
-                <div class="pfa-popup-info">
-                    <div class="info-row">
-                        <span class="info-label">Duration:</span>
-                        <span class="info-value">4-8 months</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Start Date:</span>
-                        <span class="info-value">Jan 10, 2026</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label">Focus:</span>
-                        <span class="info-value">Data Science & AI</span>
-                    </div>
-                </div>
-                <p class="pfa-popup-description">
-                    Passionate Data Science student seeking meaningful internship opportunity to apply technical skills and contribute to innovative projects.
-                </p>
-                <div class="pfa-popup-actions">
-                    <a href="#contact" class="btn primary-btn">
-                        <i class="fas fa-envelope"></i>
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+  <section id="contact" class="section contact">
+    <h2 class="section-title" data-reveal><em>05</em> Contact</h2>
+    <p class="big" data-reveal>Let's collaborate on Data Science &amp; AI projects.</p>
+    <a class="mailto" href="mailto:aliguinga2020@gmail.com" data-reveal>aliguinga2020@gmail.com</a>
+    <ul class="social" data-reveal>
+      <li><a href="https://github.com/alyguinga" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/ali-guinga-43770820b/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://www.kaggle.com/aliguinga5" target="_blank" rel="noopener">Kaggle</a></li>
+      <li><a href="https://youtube.com/@aliguinga660" target="_blank" rel="noopener">YouTube</a></li>
+      <li><a href="assets/CV_Ali_Guinga.pdf" target="_blank" rel="noopener">CV (PDF)</a></li>
+    </ul>
+  </section>
+</main>
 
-    <!-- Header and Navigation -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Ali</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="certificates.html">Certificates</a></li>
-                    <li><a href="volunteer.html">Volunteer</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hello, I'm <span>Ali Guinga</span></h1>
-                <h2>Studying <span class="typed-text"></span></h2>
-                <p>Welcome to my professional portfolio website. Here you can find information about my background, skills, and projects.</p>
-                <div class="cta-buttons">
-                    <a href="mailto:aliguinga2020@gmail.com" class="btn primary-btn">Contact Me</a>
-                    <a href="projects.html" class="btn secondary-btn">View My Work</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="profile.jpeg" alt="Ali Guinga">
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/about.JPG" alt="About Ali Guinga">
-                </div>
-                <div class="about-text">
-                    <h3>Who am I?</h3>
-                    <p>I am an engineering student at the National School of Applied Sciences (ENSA) of Tétouan, currently pursuing a degree in computer engineering with a specialization in Data Science, Big Data, and Artificial Intelligence.</p>
-                    <p>Passionate about cutting-edge technologies, I focus on machine learning, deep learning, computer vision, and large language models, exploring their transformative potential across various industries.</p>
-                    
-                    <div class="cta-buttons">
-                        <a href="mailto:aliguinga2020@gmail.com" class="btn primary-btn">Get In Touch</a>
-                        <a href="resume.html" class="btn secondary-btn">View Resume</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <p>&copy; 2025 Ali Guinga. All Rights Reserved.</p>
-                    <p class="footer-description">Data Science Student | AI Enthusiast | Problem Solver</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/ali-guinga-43770820b/" target="_blank" title="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/Guinga6" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.kaggle.com/aliguinga5" target="_blank" title="Kaggle">
-                        <i class="fab fa-kaggle"></i>
-                    </a>
-                    <a href="https://youtube.com/@aliguinga660?si=Szc6zRNXIr3y-0op" target="_blank" title="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="mailto:aliguinga2020@gmail.com" title="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-        <!-- Back to Top Button -->
-        <button class="back-to-top" id="backToTop">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-
-        <script>
-            // YouTube Banner functionality
-            function closeBanner() {
-                const banner = document.getElementById('youtube-banner');
-                const body = document.body;
-                banner.style.transform = 'translateY(-100%)';
-                setTimeout(() => {
-                    banner.style.display = 'none';
-                    body.classList.remove('banner-visible');
-                }, 300);
-            }
-
-            // Auto-hide banner after 10 seconds (optional)
-            setTimeout(() => {
-                const banner = document.getElementById('youtube-banner');
-                if (banner && banner.style.display !== 'none') {
-                    closeBanner();
-                }
-            }, 10000);
-
-            // Skill animation on scroll
-            function animateSkills() {
-                const skillBars = document.querySelectorAll('.skill-level');
-                skillBars.forEach(bar => {
-                    const rect = bar.getBoundingClientRect();
-                    const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
-                    
-                    if (isVisible) {
-                        const width = bar.style.width;
-                        bar.style.width = '0%';
-                        setTimeout(() => {
-                            bar.style.width = width;
-                        }, 100);
-                    }
-                });
-            }
-
-            // Trigger skill animation on scroll
-            window.addEventListener('scroll', animateSkills);
-            
-            // Trigger on page load
-            document.addEventListener('DOMContentLoaded', () => {
-                setTimeout(animateSkills, 500);
-            });
-        </script>
-    <script src="//code.tidio.co/xw5i3nae2fvsorpsvljkusyl3fuobzgb.js"></script>
-    </body>
-    </html>
+<footer><span>© <span id="year"></span> Ali Guinga</span><span>Computer Engineer · AI Enthusiast · Problem Solver</span></footer>
+<script src="main.js?v=polish1"></script>
+</body>
+</html>

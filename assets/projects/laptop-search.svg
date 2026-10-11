@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23d5ab"/><stop offset=".5" stop-color="#6d5cff"/><stop offset="1" stop-color="#08070b"/></linearGradient></defs>
+<rect width="800" height="500" fill="url(#g)"/>
+<g stroke="#fff" stroke-opacity=".25" fill="none">
+<line x1="120" y1="380" x2="300" y2="150"/><line x1="300" y1="150" x2="520" y2="250"/><line x1="520" y1="250" x2="680" y2="120"/><line x1="300" y1="150" x2="410" y2="400"/><line x1="410" y1="400" x2="520" y2="250"/><line x1="120" y1="380" x2="410" y2="400"/><line x1="680" y1="120" x2="640" y2="360"/><line x1="520" y1="250" x2="640" y2="360"/>
+</g>
+<g fill="#fff">
+<circle cx="120" cy="380" r="7" fill-opacity=".8"/><circle cx="300" cy="150" r="9"/><circle cx="410" cy="400" r="6" fill-opacity=".7"/><circle cx="680" cy="120" r="6" fill-opacity=".7"/><circle cx="640" cy="360" r="8" fill-opacity=".8"/>
+<circle cx="520" cy="250" r="16" fill="#ff5c38"><animate attributeName="r" values="14;20;14" dur="2.4s" repeatCount="indefinite"/></circle>
+<circle cx="520" cy="250" r="40" fill="none" stroke="#ff5c38" stroke-opacity=".6"><animate attributeName="r" values="24;70" dur="2.4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".7;0" dur="2.4s" repeatCount="indefinite"/></circle>
+</g>
+<g transform="translate(60 50)" font-family="Inter, system-ui, sans-serif"><rect width="420" height="56" rx="28" fill="#fff" fill-opacity=".95"/><circle cx="30" cy="28" r="8" fill="none" stroke="#100e14" stroke-width="2"/><line x1="36" y1="34" x2="43" y2="41" stroke="#100e14" stroke-width="2"/><text x="60" y="35" font-size="18" fill="#100e14">"light laptop for ML, 32GB RAM, under 1500€"</text></g>
+<text x="60" y="450" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#fff" fill-opacity=".75" letter-spacing="3">VECTOR SEARCH · QDRANT · SENTENCE TRANSFORMERS</text>
+</svg>
